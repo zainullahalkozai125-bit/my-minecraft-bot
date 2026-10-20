@@ -1,13 +1,13 @@
 const mineflayer = require('mineflayer');
 
 const bot = mineflayer.createBot({
-  host: 'YOUR_SERVER_IP',     // Change this to your Minecraft server IP
-  port: 25565,                // Change this if your server uses a custom port number
-  username: 'BotOnline',      // The name you want to see in the Tablist
-  version: '1.20.4'           // Your server version (e.g., '1.20.4' or '1.21')
+  host: '51.79.230.80',        // Your server IP
+  port: 11009,                 // Your server port
+  username: 'BotOnline',       // The name you want to see in the Tablist
+  version: '1.21.1'            // Core Minecraft protocol version
 });
 
-const botPassword = "BotPassword123"; // Enter a custom password for your bot
+const botPassword = "BotPassword123"; // Custom password for your login security plugin
 
 bot.on('spawn', () => {
   console.log(`${bot.username} has spawned in the server!`);
